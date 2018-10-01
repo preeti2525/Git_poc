@@ -62,12 +62,7 @@
 			<artifactId>bootstrap</artifactId>
 			<version>3.3.7</version>
 		</dependency>
-		<distributionManagement>
-   <Repository>
-      <id>nexus</id>
-      <url>http://10.5.2.253:8081/nexus/content/repositories/sample/</url>
-   </Repository>
-</distributionManagement>
+		
 
 	</dependencies>
 	<build>
