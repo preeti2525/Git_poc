@@ -72,6 +72,11 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<artifactId>maven</artifactId>
+                        <version>3.3.9</version>
+                         <packaging>pom</packaging>
+                         <name>Apache Maven</name>
+			
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>3.3.9</version>
@@ -97,6 +102,8 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
+				         <version>3.3.9</version>
+
 				<executions>
 					<execution>
 						<id>copy-dependencies</id>
