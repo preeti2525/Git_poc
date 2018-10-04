@@ -76,7 +76,6 @@
 
 			<artifactId>maven</artifactId>
                         <version>3.3.9</version>
-                         <packaging>pom</packaging>
                          <name>Apache Maven</name>
 						</plugin>
 
