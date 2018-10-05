@@ -88,8 +88,17 @@
                         <goal>copy-dependencies</goal>
                     </goals>
                     <configuration>
+			     <artifactItems>
+                        <artifactItem>
+			    <groupId>org.springframework.boot</groupId>
+                             <artifactId>spring-boot-web-jsp</artifactId>
+                                  <version>1.0.1</version>
+                                   <type>war</type>
                         <outputDirectory>project.build.directory</outputDirectory>
                         <excludeArtifactIds>module-artifact-one, module-artifact-two </excludeArtifactIds>
+				 </artifactItem>
+                      </artifactItems>
+				
                     </configuration>
                 </execution>
                 <execution>
