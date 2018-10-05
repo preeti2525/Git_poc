@@ -88,7 +88,7 @@
                         <goal>copy-dependencies</goal>
                     </goals>
                     <configuration>
-                        <outputDirectory>client/plugins</outputDirectory>
+                        <outputDirectory>project.build.directory</outputDirectory>
                         <excludeArtifactIds>module-artifact-one, module-artifact-two </excludeArtifactIds>
                     </configuration>
                 </execution>
@@ -99,7 +99,7 @@
                         <goal>copy-dependencies</goal>
                     </goals>
                     <configuration>
-                        <outputDirectory>client/modules</outputDirectory>
+                        <outputDirectory>project.build.directory</outputDirectory>
                         <excludeArtifactIds>plugin-artifact-one, plugin-artifact-two</excludeArtifactIds>
                     </configuration>
                 </execution>
