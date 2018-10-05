@@ -79,7 +79,9 @@
 			<plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-dependency-plugin</artifactId>
+	     <artifactId>maven-deploy-plugin</artifactId>
             <version>3.0.2</version>
+				
             <executions>
                 <execution>
                     <id>copy-plugins</id>
@@ -112,6 +114,33 @@
                         <excludeArtifactIds>plugin-artifact-one, plugin-artifact-two</excludeArtifactIds>
                     </configuration>
                 </execution>
+		    
+		    
+		     <execution>
+            <id>default-deploy</id>
+            <phase>none</phase>
+        </execution>
+
+        <execution>
+            <id>nexus-one</id>
+            <phase>deploy</phase>
+            <goals>
+                <goal>deploy-file</goal>
+            </goals>
+            <configuration>
+                <repositoryId>NEXUS_POC</repositoryId>
+                <url>http://10.5.2.253:8081/nexus/content/repositories/NEXUS_POC</url>
+                <packaging>war</packaging>
+                <artifactId>spring-boot-web-jsp</artifactId>
+                <groupId>${project.groupId}</groupId>
+                <version>${project.version}</version>
+                <file>${project.build.directory}/build/lib/spring-boot-web-jsp.war</file>
+            </configuration>
+        </execution>
+		    
+		    
+		    
+		    
             </executions>
         </plugin>
 		</plugins>
