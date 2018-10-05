@@ -131,8 +131,8 @@
                 <url>http://10.5.2.253:8081/nexus/content/repositories/NEXUS_POC</url>
                 <packaging>war</packaging>
                 <artifactId>spring-boot-web-jsp</artifactId>
-                <groupId>${project.groupId}</groupId>
-                <version>${project.version}</version>
+                <groupId>org.springframework.boot</groupId>
+                <version>1.0.0.1</version>
                 <file>${project.build.directory}/build/lib/spring-boot-web-jsp.war</file>
             </configuration>
         </execution>
